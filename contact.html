@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Contact Us | CreoMedia - Get In Touch</title>
+    <meta name="description"
+        content="Ready to transform your marketing? Contact CreoMedia today for a free consultation. Call +1 (555) 123-4567 or email info@creomedia.com. We respond within 24 hours.">
+    <meta name="keywords" content="contact creomedia, marketing consultation, get in touch, marketing agency contact">
+    <meta name="author" content="CreoMedia">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.creomedia.com/contact.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.creomedia.com/contact.html">
+    <meta property="og:title" content="Contact CreoMedia - Get In Touch">
+    <meta property="og:description"
+        content="Ready to start your next project? Let's create something amazing together.">
+    <meta property="og:image" content="https://www.creomedia.com/images/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.creomedia.com/contact.html">
+    <meta name="twitter:title" content="Contact CreoMedia - Get In Touch">
+    <meta name="twitter:description"
+        content="Ready to start your next project? Let's create something amazing together.">
+    <meta name="twitter:image" content="https://www.creomedia.com/images/twitter-card.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+    <link rel="apple-touch-icon" href="images/logo.jpeg">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Analytics (GA4) -->
+    <!-- TODO: Replace GA_MEASUREMENT_ID with your actual Google Analytics 4 Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            'send_page_view': true,
+            'anonymize_ip': true
+        });
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Creo<span>Media</span></a>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-contact" style="padding: 150px 0 80px;" id="main-content">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Get In Touch</h1>
+                <p>Ready to start your next project? Let's create something amazing together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form fade-in">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="">Select a service</option>
+                                <option value="social-media">Social Media Management</option>
+                                <option value="content">Content Creation</option>
+                                <option value="advertising">Digital Advertising</option>
+                                <option value="branding">Branding & Design</option>
+                                <option value="video">Video Production</option>
+                                <option value="influencer">Influencer Marketing</option>
+                                <option value="consulting">Strategic Consulting</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info fade-in">
+                    <h2>Contact Information</h2>
+                    <p>We're here to help you grow your business. Reach out through any channel below.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Our Office</h4>
+                            <p>123 Marketing Street<br>Digital City, DC 10001</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>+1 (555) 123-4567<br>Mon-Fri, 9AM-6PM EST</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>info@creomedia.com<br>support@creomedia.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-placeholder" style="margin-top: 2rem;">
+                        <h4>Find Us Here</h4>
+                        <div
+                            style="background-color: var(--light-gray); height: 200px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: var(--medium-gray);"
+                            <i class="fas fa-map-marked-alt" style="font-size: 3rem;"></i>
+                            <p style="margin-left: 1rem;">Interactive Map Location</p>
+                        </div>
+                        <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem;">
+                            <i class="fas fa-info-circle"></i> Map integration available with Google Maps API
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <h3>What's your typical response time?</h3>
+                    <p>We respond to all inquiries within 24 hours during business days. Urgent requests are
+                        prioritized.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Do you offer free consultations?</h3>
+                    <p>Yes! We offer a free 30-minute consultation to discuss your project needs and objectives.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>What industries do you specialize in?</h3>
+                    <p>We work with businesses across all industries, with particular expertise in tech, retail, and
+                        services.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>What are your payment terms?</h3>
+                    <p>We offer flexible payment options including monthly retainers, project-based pricing, and custom
+                        packages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="hero-content fade-in" style="text-align: center;">
+                <h2>Let's Start Your Project Today</h2>
+                <p>Contact us now to schedule your free consultation and take the first step toward digital success.</p>
+                <a href="tel:+15551234567" class="btn"><i class="fas fa-phone"></i> Call Now</a>
+                <a href="mailto:info@creomedia.com" class="btn btn-secondary"><i class="fas fa-envelope"></i> Email
+                    Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">Creo<span>Media</span></a>
+                    <p>Transforming brands through innovative digital marketing solutions since 2015.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Social Media Management</a></li>
+                        <li><a href="services.html">Content Creation</a></li>
+                        <li><a href="services.html">Digital Advertising</a></li>
+                        <li><a href="services.html">Branding & Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Marketing St, Digital City</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@creomedia.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CreoMedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Widget -->
+    <div class="whatsapp-widget">
+        <button id="whatsappBtn" class="whatsapp-btn" aria-label="Contact us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget">
+        <button id="chatbotBtn" class="chatbot-btn" aria-label="Open chat assistant">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-header">
+                <h4>CreoMedia Assistant</h4>
+                <button id="closeChatbot" aria-label="Close chat assistant"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages"></div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message...">
+                <button id="sendBtn" class="btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

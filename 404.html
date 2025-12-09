@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>404 - Page Not Found | CreoMedia</title>
+    <meta name="description"
+        content="The page you're looking for doesn't exist. Return to CreoMedia homepage or explore our services.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+    <link rel="apple-touch-icon" href="images/logo.jpeg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+            padding: 2rem;
+        }
+
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 10rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            margin-bottom: 1rem;
+            animation: fadeInDown 0.6s ease;
+        }
+
+        .error-message {
+            font-size: 2rem;
+            color: var(--dark-gray);
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.6s ease 0.2s both;
+        }
+
+        .error-description {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.6s ease 0.4s both;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.6s ease 0.6s both;
+        }
+
+        .search-box {
+            margin: 2rem 0;
+            animation: fadeInUp 0.6s ease 0.5s both;
+        }
+
+        .search-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            border: 2px solid var(--light-gray);
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-red);
+        }
+
+        .helpful-links {
+            margin-top: 3rem;
+            animation: fadeInUp 0.6s ease 0.7s both;
+        }
+
+        .helpful-links h3 {
+            color: var(--dark-gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .link-item {
+            padding: 1rem;
+            background: white;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--dark-gray);
+        }
+
+        .link-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .link-item i {
+            font-size: 2rem;
+            color: var(--primary-red);
+            margin-bottom: 0.5rem;
+        }
+
+        .link-item span {
+            display: block;
+            font-weight: 600;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+
+            .error-message {
+                font-size: 1.5rem;
+            }
+
+            .error-actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-message">Oops! Page Not Found</h1>
+            <p class="error-description">
+                The page you're looking for seems to have wandered off. Don't worry, even the best campaigns have a few
+                broken links!
+            </p>
+
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search our site..." id="searchInput">
+            </div>
+
+            <div class="error-actions">
+                <a href="index.html" class="btn">
+                    <i class="fas fa-home"></i> Go Home
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </a>
+            </div>
+
+            <div class="helpful-links">
+                <h3>Popular Pages</h3>
+                <div class="link-grid">
+                    <a href="services.html" class="link-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Services</span>
+                    </a>
+                    <a href="about.html" class="link-item">
+                        <i class="fas fa-users"></i>
+                        <span>About Us</span>
+                    </a>
+                    <a href="contact.html" class="link-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple search functionality
+        const searchInput = document.getElementById('searchInput');
+
+        searchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                const query = searchInput.value.toLowerCase().trim();
+
+                // Simple keyword-based navigation
+                if (query.includes('service') || query.includes('marketing')) {
+                    window.location.href = 'services.html';
+                } else if (query.includes('about') || query.includes('team') || query.includes('company')) {
+                    window.location.href = 'about.html';
+                } else if (query.includes('contact') || query.includes('email') || query.includes('phone')) {
+                    window.location.href = 'contact.html';
+                } else if (query.includes('home') || query === '') {
+                    window.location.href = 'index.html';
+                } else {
+                    // If no match, go to home
+                    // If no match, go to home
+                    const searchBox = document.querySelector('.search-box');
+                    // Check if error message already exists
+                    if (!searchBox.querySelector('.search-error')) {
+                        const msg = document.createElement('p');
+                        msg.className = 'search-error';
+                        msg.style.color = 'var(--primary-red)';
+                        msg.style.marginTop = '10px';
+                        msg.style.fontWeight = '500';
+                        msg.textContent = 'No results found. Redirecting to homepage...';
+                        searchBox.appendChild(msg);
+                    }
+
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 2000);
+                }
+            }
+        });
+
+        // Auto-focus search input
+        searchInput.focus();
+    </script>
+</body>
+
+</html>
